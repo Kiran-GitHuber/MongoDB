@@ -1,4 +1,4 @@
 ---
 applications:
 - name: MongoDB
-  memory: 512M
+  memory: 512MB
