@@ -1,4 +1,11 @@
 ---
 applications:
 - name: MongoDB
-  memory: 512MB
+  memory: 256M
+  instances: 1
+  path: .
+  domain: cfapps.io
+  command: npm install && npm start
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  services:
+  - mongoservice
